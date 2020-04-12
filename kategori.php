@@ -41,8 +41,8 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Get work done <span>faster</span> <br>   and <span>better</span> with us</h1>
-         <a href="" class="btn btn-primary" > Our Work</a>
+        <h1 class="display-4" > Kategori Kuliner</h1>
+        <h1 class="display-5"> Khas Surabaya</span></h1>
           
       </div>
     </div 
@@ -50,48 +50,83 @@
 
     <!-- Container -->
     <div class="container">
+          <br>
+         <!-- Rekomendasi -->
+         <h1 class="mt-4 mb-4" align="center" style="font-size:300%">Rekomendasi</h1>
 
-      <!-- info panel-->
-      <div class="row justify-content-center">
-        <div class="col-lg-10 info-panel">
+        <!--card-->>
+        <div class="row justify-content-center">
           <div class="row">
             <div class="col-lg">
-              <img src="img/employee.png" alt="Employee" class="float-left">
-              <h4> 24 Hours</h4>
-              <p> Lorem ipsum dolor sit amet</p>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/lontongbalap.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Lontong Balap Keranggan</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
             <div class="col-lg">
-              <img src="img/hires.png" alt="Hires" class="float-left">
-              <h4> 24 Hours</h4>
-              <p> Lorem ipsum dolor sit amet</p>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/sateklopo.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
             <div class="col-lg">
-              <img src="img/security.png" alt="Security" class="float-left">
-              <h4> 24 Hours</h4>
-              <p> Lorem ipsum dolor sit amet</p>
-            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
         
-      </div>
+        <br> <br>
 
-      <!-- akhir info panel -->
-
-        <!-- Workingspace -->
-        <div class="row workingspace ">
-          <div class="col-lg-6 ">
-            <img src="img/workingspace.png" alt="workingspace" class="img-fluid">
-          </div>
-          <div class="col-lg-5">
-            <h3>You <span>work</span> like at <span> home</span></h3>
-            <p> Bekerja dengan suasana hati yang lebih asik dan mempelajari hal baru setiap harinya</p>
-            <a href="" class="btn btn-primary tombol">Gallery</a>  
+        <div class="row justify-content-center">
+          <div class="row">
+            <div class="col-lg">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- akhir workingspace -->
-
+     
         <!-- Testimonial -->
         <section class="testimonial">
           <div class="row justify-content-center">
@@ -116,7 +151,7 @@
 <!-- footer -->
 <div class="row footer">
 <div class="col text-center">
-  <p>2018 All Rights Reserved by Rosa</p>
+<p>2020 All Rights Reserved by Kelompok 2 RBPL</p>
 </div>
 </div>
     </div>
