@@ -126,6 +126,14 @@
             </div>
           </div>
         </div>
+
+         <!-- Testimonial -->
+         <section class="testimonial">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h5>"Bekerja dengan suasana hati yang lebih asik dan mempelajari hal baru setiap harinya"</h5>
+            </div>
+          </div>
      
         <!-- Testimonial -->
         <section class="testimonial">
