@@ -31,7 +31,7 @@
             <a class="nav-item nav-link" href="#">Pricing</a>
             <a class="nav-item nav-link" href="#">Features</a>
             <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item btn btn-primary tombol" href="#">Join us</a>
+            <a class="nav-item btn btn-primary tombol" href="login.php">Login</a>
           </div>
         </div>
        </div>
@@ -59,7 +59,7 @@
           <div class="row">
             <div class="col-lg">
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/lontongbalap.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/lontongbalap.jpg" alt="Card image cap"  height="190">
                 <div class="card-body">
                   <h5 class="card-title">Lontong Balap Keranggan</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,9 +69,9 @@
             </div>
             <div class="col-lg">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/sateklopo.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/sateklopo.jpg" alt="Card image cap"  height="190">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title"> Sate Klopo Ondomohen</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -79,9 +79,9 @@
             </div>
             <div class="col-lg">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/rawon.jpg" alt="Card image cap" height="190">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Rawon Setan</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -96,9 +96,9 @@
           <div class="row">
             <div class="col-lg">
               <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/bebek.jpg" alt="Card image cap" height="190">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Bebek Palupi</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -106,9 +106,9 @@
             </div>
             <div class="col-lg">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/tahutelur.jpg" alt="Card image cap" height="190">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Tahu Tek Pak Jayen</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -116,11 +116,11 @@
             </div>
             <div class="col-lg">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/soto.jpg" alt="Card image cap"  height="190" >
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Soto Lamongan Cak Har</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="restoran1.php" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
