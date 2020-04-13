@@ -91,7 +91,7 @@
                             </a>
                           </div>
 
-                        <h5 class="card-title" style="color:darkslategrey">Soto Lamongan Cak Har</h5>
+                        <h4 class="card-title" style="color:darkslategrey">Soto Lamongan Cak Har</h4>
                         <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="https://www.google.com/search?safe=strict&sxsrf=ALeKk01Dt7voBSK4X_lkERYHrRQZRNOMEg:1586762168466&ei=rhGUXuTJEsKw9QPRs6moDw&q=soto%20ayam%20lamongan%20cak%20har&oq=soto+ayam+lamonga&gs_lcp=CgZwc3ktYWIQAxgDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoECCMQJzoFCAAQgwE6BAgAEENKKQgXEiUwZzgzZzEwMGc3OGc3MWcxMDNnOTFnOTBnODZnMzZnOTJnMTExShsIGBIXMGcxZzFnMWcxZzFnMmcyZzFnNGc1ZzNQ7BlY-TZgh0NoAnADeACAAWuIAaAMkgEEMTYuM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab&npsic=0&rflfq=1&rlha=0&rllag=-7292645,112782183,343&tbm=lcl&rldimm=7692316336860811164&lqi=Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI&phdesc=zx6lnNzN9xg&ved=2ahUKEwiru5Pb7eToAhUPU30KHTQ5D9UQvS4wAHoECAsQIA&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&rlst=f#rlfi=hd:;si:12301630764080797655,l,Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI,y,U_-vMn5khBU;mv:[[-7.28953822268097,112.78335724388852],[-7.28989817731903,112.78299435611149]]" target="_blank">Jl. Dr. Ir. H. Soekarno No. 220, Sukolilo, Surabaya</a></p>
 
                     <p class="small-screen-toggle">
@@ -109,6 +109,80 @@
                         <span class="left"> Senin - Minggu (06:00 - 22:00)</span>
                         
                     </p>
+
+                    <div class="container">
+                        
+                        <h4>Daftar Harga</h4>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Makanan</button>
+                        <div id="demo" class="collapse">
+                            <div class="container">
+                                            
+                                <table class="table table-borderless">
+                                  <thead>
+                                    <tr>
+                                      <th>Nama</th>
+                                      <th>Harga</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Soto Ayam</td>
+                                      <td>Rp. 20.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Soto Daging</td>
+                                      <td>Rp. 25.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Jeroan</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                        
+                        <h4>    </h4>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Minuman</button>
+                        <div id="demo" class="collapse">
+                            <div class="container">
+                                            
+                                <table class="table table-borderless">
+                                  <thead>
+                                    <tr>
+                                      <th>Nama</th>
+                                      <th>Harga</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Es Teh Manis</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Es Jeruk</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Es Susu</td>
+                                      <td>Rp. 8.000</td>
+                                      
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                      </div>
 
                     
 
@@ -164,9 +238,11 @@
         
         <form action="/action_page.php">
           <div class="form-group">
-            <label for="comment">Comment:</label>
+            <label for="comment">Berkomentar:</label>
             <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
           </div>
+
+          
 
           <div class="container">
             <p>Rating: </p>
@@ -196,6 +272,7 @@
                   <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5" checked>5
                 </label>
               </div>
+              
               <button type="submit" class="btn btn-primary">Kirim Pendapat</button>
             </form>
           </div>
