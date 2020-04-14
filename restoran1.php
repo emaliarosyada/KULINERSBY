@@ -1,3 +1,34 @@
+<?php
+require'function.php';                                
+
+$produk = query("SELECT * FROM khas WHERE namarestoran = 'Soto Ayam Cak Har'");
+$review = query("SELECT * FROM review");
+
+if(isset($_POST["submit"]) ){
+
+
+  //query apakah data berhasil ditambah atau tidak
+  if(tambahreview($_POST) > 0) {
+      echo "
+      <script>
+          alert('Data berhasil ditambahkan!');
+          document.location.href = 'restoran1.php';
+      </script>
+      ";
+      header('location: restoran1.php');
+  } else {
+      echo "
+      <script>
+          alert('Data gagal ditambahkan!');
+      </script>
+  ";
+  }
+  
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -68,6 +99,8 @@
                               <li data-target="#demo" data-slide-to="1" class="active"></li>
                               <li data-target="#demo" data-slide-to="2" class="active"></li>
                             </ul>
+
+                            <?php foreach ($produk as $row) : ?>
                             
                             <!-- The slideshow -->
                             <div class="carousel-inner">
@@ -91,14 +124,14 @@
                             </a>
                           </div>
 
-                        <h5 class="card-title" style="color:darkslategrey">Soto Lamongan Cak Har</h5>
-                        <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="https://www.google.com/search?safe=strict&sxsrf=ALeKk01Dt7voBSK4X_lkERYHrRQZRNOMEg:1586762168466&ei=rhGUXuTJEsKw9QPRs6moDw&q=soto%20ayam%20lamongan%20cak%20har&oq=soto+ayam+lamonga&gs_lcp=CgZwc3ktYWIQAxgDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoECCMQJzoFCAAQgwE6BAgAEENKKQgXEiUwZzgzZzEwMGc3OGc3MWcxMDNnOTFnOTBnODZnMzZnOTJnMTExShsIGBIXMGcxZzFnMWcxZzFnMmcyZzFnNGc1ZzNQ7BlY-TZgh0NoAnADeACAAWuIAaAMkgEEMTYuM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab&npsic=0&rflfq=1&rlha=0&rllag=-7292645,112782183,343&tbm=lcl&rldimm=7692316336860811164&lqi=Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI&phdesc=zx6lnNzN9xg&ved=2ahUKEwiru5Pb7eToAhUPU30KHTQ5D9UQvS4wAHoECAsQIA&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&rlst=f#rlfi=hd:;si:12301630764080797655,l,Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI,y,U_-vMn5khBU;mv:[[-7.28953822268097,112.78335724388852],[-7.28989817731903,112.78299435611149]]" target="_blank">Jl. Dr. Ir. H. Soekarno No. 220, Sukolilo, Surabaya</a></p>
+                        <h5 class="card-title" style="color:darkslategrey"><?= $row["namarestoran"]; ?></h5>
+                        <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="<?= $row["linkalamat"]; ?>" target="_blank"><?= $row["alamat"]; ?></a></p>
 
                     <p class="small-screen-toggle">
                         <i class="fa fa-phone left"></i>
                         <span class="left" itemprop="telephone">
                             <img class="card-img-left" src="https://image.flaticon.com/icons/png/512/25/25453.png" height="10" >
-                            <a href="tel:082233337398">082233337398</a>, <a href="tel:081332743024"> 081332743024</a>
+                            <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>, <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>
                         </span>
                         <span class="clearfix"></span>
                     </p>
@@ -106,10 +139,12 @@
                     <p class="small-screen-toggle">
                         <i class="fa fa-clock-o left"></i>
                         <img class="card-img-left" src="https://banner2.cleanpng.com/20180604/kwx/kisspng-computer-icons-time-attendance-clocks-font-aweso-clock-icon-5b14c6364f6622.2216713915280881183252.jpg" height="10" >
-                        <span class="left"> Senin - Minggu (06:00 - 22:00)</span>
+                        <span class="left"> <?= $row["hari_buka"]; ?> ,
+                            <?= $row["jam_buka"]; ?></span>
                         
                     </p>
 
+                    <?php endforeach; ?>
                     
 
 
@@ -122,81 +157,66 @@
         </div>
         
     </div>
-
+                              
     <div class="container mt-3">
-        <p>Komentar orang: </p>
+    <h4>Review Pengunjung: </h4>
+    <?php foreach ($review as $row) : ?>
+    
         <!-- Media top -->
         <div class="media">
           <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" class="align-self-start mr-3" style="width:60px">
           <div class="media-body">
-            <h4>Luhut Binsar</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4><?= $row["nama"]; ?></h4>
+            <p><?= $row["review"]; ?></p>
+            <h5>Rating: <?= $row["rating"]; ?></h5>
           </div>
         </div>
-      
-        <!-- Media middle -->
-        <div class="media">
-            <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" class="align-self-start mr-3" style="width:60px">
-            <div class="media-body">
-              <h4>Haji Lulung</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-      
-        <!-- Media bottom -->
-        <div class="media">
-            <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" class="align-self-start mr-3" style="width:60px">
-            <div class="media-body">
-              <h4>Setya Novanto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
+    <?php endforeach; ?>
+    </div>
 
-      </div>
+    <br>
+    <br>
 
     <div class="container">
+    <H4>Tambahkan Review </H4>
         
-        <form action="/action_page.php">
-          <div class="form-group">
-            <label for="comment">Comment:</label>
-            <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+    <form method="post" action="">
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" class="form-control" rows="5" id="nama" name="nama" required></textarea>
           </div>
-
-          <div class="container">
-            <p>Rating: </p>
-            <form action="/action_page.php">
+          <div class="form-group">
+            <label for="review">Review:</label>
+            <textarea class="form-control" rows="5" id="review" name="review" required></textarea>
+          </div>
+              <h6>Rating : </h6>
               <div class="form-check">
-                <label class="form-check-label" for="radio1">
-                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">1
+                <label class="form-check-label" for="rating">
+                  <input type="radio" class="form-check-input" id="rating" name="rating" value="option1">1
                 </label>
               </div>
               <div class="form-check">
-                <label class="form-check-label" for="radio2">
-                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">2
+                <label class="form-check-label" for="rating2">
+                  <input type="radio" class="form-check-input" id="rating2" name="rating" value="option2">2
                 </label>
               </div>
               <div class="form-check">
-                <label class="form-check-label" for="radio3">
-                  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">3
+                <label class="form-check-label" for="rating3">
+                  <input type="radio" class="form-check-input" id="rating3" name="rating" value="option3">3
                 </label>
               </div>
               <div class="form-check">
-                <label class="form-check-label" for="radio4">
-                  <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">4
+                <label class="form-check-label" for="rating4">
+                  <input type="radio" class="form-check-input" id="rating4" name="rating" value="option4">4
                 </label>
               </div>
               <div class="form-check">
-                <label class="form-check-label" for="radio5">
-                  <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5" checked>5
+                <label class="form-check-label" for="raing5">
+                  <input type="radio" class="form-check-input" id="rating5" name="rating" value="option5" checked>5
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim Pendapat</button>
+              <br><br>
+              <button type="submit" class="btn btn-success" style="margin-left:38px" name="submit">Tambahkan Review</button>
             </form>
           </div>
 
