@@ -145,6 +145,80 @@ if(isset($_POST["submit"]) ){
                     </p>
 
                     <?php endforeach; ?>
+                    <div class="container">
+                        
+                        <h4>Daftar Harga</h4>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Makanan</button>
+                        <div id="demo" class="collapse">
+                            <div class="container">
+                                            
+                                <table class="table table-borderless">
+                                  <thead>
+                                    <tr>
+                                      <th>Nama</th>
+                                      <th>Harga</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Soto Ayam</td>
+                                      <td>Rp. 20.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Soto Daging</td>
+                                      <td>Rp. 25.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Jeroan</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                        
+                        <h4>    </h4>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Minuman</button>
+                        <div id="demo" class="collapse">
+                            <div class="container">
+                                            
+                                <table class="table table-borderless">
+                                  <thead>
+                                    <tr>
+                                      <th>Nama</th>
+                                      <th>Harga</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Es Teh Manis</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Es Jeruk</td>
+                                      <td>Rp. 5.000</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Es Susu</td>
+                                      <td>Rp. 8.000</td>
+                                      
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                      </div>
+
                     
 
 
