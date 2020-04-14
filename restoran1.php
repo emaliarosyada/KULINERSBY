@@ -126,25 +126,31 @@ if(isset($_POST["submit"]) ){
                             </a>
                         </div>
 
-<<<<<<< HEAD
-                        <h3 class="card-title" style="color:black">Soto Lamongan Cak Har</h3>
-                        <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="https://www.google.com/search?safe=strict&sxsrf=ALeKk01Dt7voBSK4X_lkERYHrRQZRNOMEg:1586762168466&ei=rhGUXuTJEsKw9QPRs6moDw&q=soto%20ayam%20lamongan%20cak%20har&oq=soto+ayam+lamonga&gs_lcp=CgZwc3ktYWIQAxgDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoECCMQJzoFCAAQgwE6BAgAEENKKQgXEiUwZzgzZzEwMGc3OGc3MWcxMDNnOTFnOTBnODZnMzZnOTJnMTExShsIGBIXMGcxZzFnMWcxZzFnMmcyZzFnNGc1ZzNQ7BlY-TZgh0NoAnADeACAAWuIAaAMkgEEMTYuM5gBAKABAaoBB2d3cy13aXo&sclient=psy-ab&npsic=0&rflfq=1&rlha=0&rllag=-7292645,112782183,343&tbm=lcl&rldimm=7692316336860811164&lqi=Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI&phdesc=zx6lnNzN9xg&ved=2ahUKEwiru5Pb7eToAhUPU30KHTQ5D9UQvS4wAHoECAsQIA&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&rlst=f#rlfi=hd:;si:12301630764080797655,l,Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhclo4Chpzb3RvIGF5YW0gbGFtb25nYW4gY2FrIGhhciIac290byBheWFtIGxhbW9uZ2FuIGNhayBoYXI,y,U_-vMn5khBU;mv:[[-7.28953822268097,112.78335724388852],[-7.28989817731903,112.78299435611149]]" target="_blank">Jl. Dr. Ir. H. Soekarno No. 220, Sukolilo, Surabaya</a></p>
+                        <h5 class="card-title" style="color:darkslategrey"><?= $row["namarestoran"]; ?></h5>
+                        <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="<?= $row["linkalamat"]; ?>" target="_blank"><?= $row["alamat"]; ?></a></p>
 
-                        <p class="small-screen-toggle">           
-                            <span class="left" itemprop="telephone">
-                                <img class="card-img-left" src="https://image.flaticon.com/icons/png/512/25/25453.png" height="10" >
-                                <a href="tel:082233337398">082233337398</a>, <a href="tel:081332743024"> 081332743024</a>
-                            </span>
-                            <span class="clearfix"></span>
-                        </p>
-    
-                        <p class="small-screen-toggle">                           
-                            <img class="card-img-left" src="https://banner2.cleanpng.com/20180604/kwx/kisspng-computer-icons-time-attendance-clocks-font-aweso-clock-icon-5b14c6364f6622.2216713915280881183252.jpg" height="10" >
-                            <span class="left"> Senin - Minggu (06:00 - 22:00)</span>                          
-                        </p>                    
-                        <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Menu</button></p>
+                    <p class="small-screen-toggle">
+                        <i class="fa fa-phone left"></i>
+                        <span class="left" itemprop="telephone">
+                            
+                            <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>, <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>
+                        </span>
+                        <span class="clearfix"></span>
+                    </p>
 
-                    <!-- Menu -->
+                    <p class="small-screen-toggle">
+                        <i class="fa fa-clock-o left"></i>
+                        
+                        <span class="left"> <?= $row["hari_buka"]; ?> ,
+                            <?= $row["jam_buka"]; ?></span>
+                        
+                    </p>
+
+                    <?php endforeach; ?>
+
+                    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Menu</button></p>
+                   
+                            <!-- Menu -->
                         <div id="menu" class="w3-modal">
                             <div class="w3-modal-content w3-animate-zoom">
                                 <div class="w3-container w3-black w3-display-container">
@@ -164,155 +170,50 @@ if(isset($_POST["submit"]) ){
                                     <h5>Es Jeruk <b>Rp. 5.000</b></h5>
                                 </div>                           
                             </div>
-=======
-                        <h5 class="card-title" style="color:darkslategrey"><?= $row["namarestoran"]; ?></h5>
-                        <p class="card-text"><img class="card-img-left" src="https://webstockreview.net/images/google-map-icons-png-3.png" height="10" >  <a href="<?= $row["linkalamat"]; ?>" target="_blank"><?= $row["alamat"]; ?></a></p>
-
-                    <p class="small-screen-toggle">
-                        <i class="fa fa-phone left"></i>
-                        <span class="left" itemprop="telephone">
-                            <img class="card-img-left" src="https://image.flaticon.com/icons/png/512/25/25453.png" height="10" >
-                            <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>, <a href="tel:<?= $row["notelepon"]; ?>"><?= $row["notelepon"]; ?></a>
-                        </span>
-                        <span class="clearfix"></span>
-                    </p>
-
-                    <p class="small-screen-toggle">
-                        <i class="fa fa-clock-o left"></i>
-                        <img class="card-img-left" src="https://banner2.cleanpng.com/20180604/kwx/kisspng-computer-icons-time-attendance-clocks-font-aweso-clock-icon-5b14c6364f6622.2216713915280881183252.jpg" height="10" >
-                        <span class="left"> <?= $row["hari_buka"]; ?> ,
-                            <?= $row["jam_buka"]; ?></span>
-                        
-                    </p>
-
-                    <?php endforeach; ?>
-                    <div class="container">
-                        
-                        <h4>Daftar Harga</h4>
-                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Makanan</button>
-                        <div id="demo" class="collapse">
-                            <div class="container">
-                                            
-                                <table class="table table-borderless">
-                                  <thead>
-                                    <tr>
-                                      <th>Nama</th>
-                                      <th>Harga</th>
-                                      
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>Soto Ayam</td>
-                                      <td>Rp. 20.000</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td>Soto Daging</td>
-                                      <td>Rp. 25.000</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td>Jeroan</td>
-                                      <td>Rp. 5.000</td>
-                                      
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
                         </div>
-                      </div>
 
-                      <div class="container">
-                        
-                        <h4>    </h4>
-                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Minuman</button>
-                        <div id="demo" class="collapse">
-                            <div class="container">
-                                            
-                                <table class="table table-borderless">
-                                  <thead>
-                                    <tr>
-                                      <th>Nama</th>
-                                      <th>Harga</th>
-                                      
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>Es Teh Manis</td>
-                                      <td>Rp. 5.000</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td>Es Jeruk</td>
-                                      <td>Rp. 5.000</td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td>Es Susu</td>
-                                      <td>Rp. 8.000</td>
-                                      
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
->>>>>>> 539f5c14e5a47a3a82c6e6675d00b88d8530db35
-                        </div>
-                    </div>
                 </div>
             </div>                 
         </div>        
     </div>
-                              
-    <div class="container mt-3">
-<<<<<<< HEAD
-        <p>Komentar orang: </p>
-        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-            <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-            <span class="w3-right w3-opacity">16 min</span>
-            <h4>Luhut Binsar</h4><br>
-            <hr class="w3-clear">
-            <p>Gokil sih.</p>
-            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-            <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-        </div>
-    </div>
 
-    <div class="container mt-3">
-        <p>Tulis pendapat: </p>
-        <div class="w3-row-padding">
-            <div class="w3-col m12">
-              <div class="w3-card w3-round w3-white">
-                <div class="w3-container w3-padding">
-                  <h6 class="w3-opacity">Yuk ditulis</h6>
-                  <p contenteditable="true" class="w3-border w3-padding"> </p>
-                  <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-=======
-    <h4>Review Pengunjung: </h4>
-    <?php foreach ($review as $row) : ?>
+  
+      
+                              
+      <?php foreach ($review as $row) : ?>
+      <div class="container mt-3">
     
         <!-- Media top -->
-        <div class="media">
-          <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" class="align-self-start mr-3" style="width:60px">
-          <div class="media-body">
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img src="https://www.clipartmax.com/png/middle/119-1198197_anonymous-person-svg-png-icon-free-download-anonymous-icon-png.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <span class="w3-right w3-opacity">16 min</span> <!--ditambahin database waktu dibuat-->
+          
             <h4><?= $row["nama"]; ?></h4>
+            <hr class="w3-clear">
             <p><?= $row["review"]; ?></p>
             <h5>Rating: <?= $row["rating"]; ?></h5>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+            <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
           </div>
         </div>
-    <?php endforeach; ?>
+      </div>
+      <?php endforeach; ?>
+ 
+      <div class="row justify-content-center">
+    <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="rawonsetan.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="rawonsetan.html">Next</a></li>
+      </ul>
     </div>
 
     <br>
     <br>
-
-    <div class="container">
+    
+    <div class="container mt-3">
+    <div class="w3-container w3-card w3-white w3-round w3-margin">
     <H4>Tambahkan Review </H4>
         
     <form method="post" action="">
@@ -350,29 +251,17 @@ if(isset($_POST["submit"]) ){
                   <input type="radio" class="form-check-input" id="rating5" name="rating" value="option5" checked>5
                 </label>
               </div>
-              <br><br>
-              <button type="submit" class="btn btn-success" style="margin-left:38px" name="submit">Tambahkan Review</button>
+              <br>
+              <button type="submit" class="btn btn-success" " name="submit">Tambahkan Review</button>
+              <br>
+              <br>
             </form>
+          </div>
           </div>
 
 
 
-    
-
-    
-
->>>>>>> 539f5c14e5a47a3a82c6e6675d00b88d8530db35
-
-    <div class="row justify-content-center">
-    <ul class="pagination">
-        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="rawonsetan.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="rawonsetan.html">Next</a></li>
-      </ul>
-    </div>
-
+  
     <div class="row footer">
         <div class="col text-center">
         <p>2020 All Rights Reserved by Kelompok 2 RBPL</p>
