@@ -1,3 +1,34 @@
+<?php
+require'function.php';                                
+
+$produk = query("SELECT * FROM khas WHERE namarestoran = 'Soto Ayam Cak Har'");
+$review = query("SELECT * FROM review");
+
+if(isset($_POST["submit"]) ){
+
+
+  //query apakah data berhasil ditambah atau tidak
+  if(tambahreview($_POST) > 0) {
+      echo "
+      <script>
+          alert('Data berhasil ditambahkan!');
+          document.location.href = 'restoran1.php';
+      </script>
+      ";
+      header('location: restoran1.php');
+  } else {
+      echo "
+      <script>
+          alert('Data gagal ditambahkan!');
+      </script>
+  ";
+  }
+  
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
