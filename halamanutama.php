@@ -1,62 +1,117 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- My Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title> KULINER SURABAYA </title>
-  </head>
-  <body>
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
-        <a class="navbar-brand" href="#">KULINER SURABAYA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-            <a class="nav-item btn btn-primary tombol" href="#">LOGIN</a>
-          </div>
-        </div>
-       </div>
-    </nav>
-    <!-- Akhir navbar -->
-
-    
-      <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <h1 class="display-4"><span>KULINER SURABAYA</span> <br> Legenda Cita Rasa</h1>
-          
-      </div>
-    </div 
-    <!-- Akhir Jumbotron -->
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+              
+    </head>
+    <body>
         
-<!-- footer -->
-<div class="row footer">
-<div class="col text-center">
-  <p>2019 All Rights Reserved by Kuliner Surabaya</p>
-</div>
-</div>
-    </div>
-    <!-- akhir container -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min .js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"  crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+       <section id="nav-bar">
+           <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CATEGORIES</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#" >CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section> 
+
+<!--------banner section---------->
+        
+<section id="banner">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+           <p class="promo-title">KULINER SURABAYA</p>
+               <p>Surabaya Culinary, We do what you fancy</p>
+           </div>
+           <div class="col-md-6 text-center">
+               <img src="img/undraw_breakfast_psiw.svg" class="img-fluid">
+           </div>
+       </div>  
+       
+       <img src="img/wavescopy1.png" class="bottom-img">
+        
+        
+        
+        </section>
+
+<!----------About Section-------->
+    
+    <section id="about">
+    <div class="container text-center">
+        <h1 class="title">TOP THREE</h1>
+        <div class="row text-center">
+            <div class="col-md-4">
+            <img src="img/about1.jpg" class="about-img">
+                <h4>Sego Sambel Mak Yeye</h4>
+                <p>Jl. Jagir Wonokromo Wetan No.10, Jagir, Surabaya</p>
+            </div>
+            
+            
+            <div class="col-md-4">
+            <img src="img/about2.jpg" class="about-img">
+                <h4>Soto Ayam Ambengan Pak Sadi Asli</h4>
+                <p>Jl. Dr. Ir. H. Soekarno</p>
+            </div>
+            
+            
+            <div class="col-md-4">
+            <img src="img/about3.jpg" class="about-img">
+                <h4>Tahu Tek Pak Jayen</h4>
+                <p>Jl. Dharmahusada</p>
+            </div>
+        </div>
+        <button type="button"class="btn btn-primary"> </button>
+        </div>
+    
+    </section>
+
+<!-------Categories------>
+  <section id="categories" >
+    <div class="container">
+      <h1 class="title text-center"> CATEGORIES </h1>
+        <a class="btn" href="#">
+            <i class="fas fa-star"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fas fa-star-shooting"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fas fa-location-arrow"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fas fa-ice-cream"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fas fa-pizza"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fas fa-soup"></i>
+        </a>
+        </div>
+      </div> 
+</section>
+        
+        
+    </body>
+
 </html>
