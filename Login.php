@@ -9,32 +9,38 @@
     <!-- My Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <title> Login </title>
   </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark " >
-    <div class="container">
-      <a class="navbar-brand" href="#">Kuliner Surabaya</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item btn btn-primary tombol" href="login.html">Login</a>
-
-        </div>
-      </div>
-     </div>
-  </nav>
-  <!-- Akhir navbar -->
+   <!-- Navbar -->
+   <section id="nav-bar">
+           <nav class="navbar navbar-expand-lg navbar-light">
+           <a class="navbar-brand" href="#"><img src="img/kitchen.png"></a>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="halamanutama.php">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php" >LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section> 
+    <!-- Akhir navbar -->
   <!-- Jumbotron -->
 
 
@@ -91,6 +97,26 @@
             </div>
           </div>
 </div>
+
+  <!-------footer------->
+  <section id="footer">
+            <img src="img/wavescopy2.png" class="footer-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 footer-box">
+                            <img src="img/kitchen.png">
+                            <p>Subscribe Easy tutorials YouTube Channel to watch more videos on website development, Digital Marketing, WordPress and Graphics Designing. press bell icon to get notifications.</p>
+                        </div>
+                        
+                        <div class="col-md-4 footer-box">
+                            <p><b>KONTAK KAMI</b></p>
+                            <p>Kuliner Surabaya</p>
+                            <p>+62 81234567890</p>
+                            <p>abcdefgh@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+        </section>  
 
 
 

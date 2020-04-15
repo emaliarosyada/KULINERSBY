@@ -1,59 +1,70 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title> Kategori </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <!-- My Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 
-    <title> Kategori </title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item btn btn-primary tombol" href="login.php">Login</a>
-          </div>
-        </div>
-       </div>
-    </nav>
+    <section id="nav-bar">
+           <nav class="navbar navbar-expand-lg navbar-light">
+           <a class="navbar-brand" href="#"><img src="img/kitchen.png"></a>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="halamanutama.php">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php" >LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section> 
     <!-- Akhir navbar -->
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4" > Kategori Kuliner</h1>
-        <h1 class="display-5"> Khas Surabaya</span></h1>
-          
+        <h1 class="display-5"> Khas Surabaya</span></h1>      
       </div>
-    </div 
+    </div>
     <!-- Akhir Jumbotron -->
 
     <!-- Container -->
-    <div class="container">
-          <br>
+  
          <!-- Rekomendasi -->
-         <h1 class="mt-4 mb-4" align="center" style="font-size:300%">Rekomendasi</h1>
-
+         <section id="about">
+            <div class="container text-center">
+              <h1 class="title">REKOMENDASI</h1>
+            </div>
+         </section>
+         
+    <div class="container">
         <!--card-->>
         <div class="row justify-content-center">
           <div class="row">
@@ -144,50 +155,34 @@
                   <p>Designer</p>
                 </figcaption>
               </figure>
+              <br>
+              <br>
+              <br>
             </div>
           </div>
         </section>
-
-<!-- footer -->
-<div class="row footer">
-<div class="col text-center">
-<p>2020 All Rights Reserved by Kelompok 2 RBPL</p>
-</div>
-</div>
     </div>
-    <!-- akhir container -->
+<!-- akhir container -->
 
+<!-------footer------->
+        <section id="footer">
+            <img src="img/wavescopy2.png" class="footer-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 footer-box">
+                            <img src="img/kitchen.png">
+                            <p>Subscribe Easy tutorials YouTube Channel to watch more videos on website development, Digital Marketing, WordPress and Graphics Designing. press bell icon to get notifications.</p>
+                        </div>
+                        
+                        <div class="col-md-4 footer-box">
+                            <p><b>KONTAK KAMI</b></p>
+                            <p>Kuliner Surabaya</p>
+                            <p>+62 81234567890</p>
+                            <p>abcdefgh@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+        </section>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min .js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"  crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
