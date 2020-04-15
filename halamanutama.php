@@ -42,7 +42,7 @@
        <div class="row">
            <div class="col-md-6">
            <p class="promo-title">KULINER SURABAYA</p>
-               <p>Surabaya Culinary, We do what you fancy</p>
+               <p>Kuliner Surabaya adalah situs review tempat makan terlengkap di Surabaya. Mulai dari pedagang kaki lima hingga restoran bintang lima. Surabaya Culinary, We do what you fancy</p>
            </div>
            <div class="col-md-6 text-center">
                <img src="img/undraw_breakfast_psiw.svg" class="img-fluid">
