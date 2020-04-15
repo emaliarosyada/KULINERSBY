@@ -10,7 +10,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background-image: url(img/street2.jpg);
+    background-image: url(img/jumbotron-bg.jpg);
      background-size: cover ;
      height: 540px ; 
      text-align: center; 
