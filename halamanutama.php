@@ -12,6 +12,7 @@
         
        <section id="nav-bar">
            <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="#"><img src="img/kitchen.png"></a>
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
@@ -41,7 +42,7 @@
        <div class="row">
            <div class="col-md-6">
            <p class="promo-title">KULINER SURABAYA</p>
-               <p>Surabaya Culinary, We do what you fancy</p>
+               <p>Kuliner Surabaya adalah situs review tempat makan terlengkap di Surabaya. Mulai dari pedagang kaki lima hingga restoran bintang lima. Surabaya Culinary, We do what you fancy</p>
            </div>
            <div class="col-md-6 text-center">
                <img src="img/undraw_breakfast_psiw.svg" class="img-fluid">
@@ -109,6 +110,37 @@
         </a>
         </div>
       </div> 
+</section>
+        
+<!----Find us on social media---->
+<section id="social-media">
+        <div class="container text-center">
+        <p>FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/instagram.png"></a>
+            <a href="#"><img src="img/twitter.png"></a>
+        </div>
+    </div>
+</section>    
+<!-------footer------->
+<section id="footer">
+    <img src="img/wavescopy2.png" class="footer-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="img/kitchen.png">
+                    <p>Subscribe Easy tutorials YouTube Channel to watch more videos on website development, Digital Marketing, WordPress and Graphics Designing. press bell icon to get notifications.</p>
+                </div>
+                
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p>Information System, Sepuluh Nopember Institute Technology</p>
+                    <p>+62 81234567890</p>
+                    <p>abcde@gmail.com</p>
+                </div>
+            </div>
+        </div>
 </section>
         
         
