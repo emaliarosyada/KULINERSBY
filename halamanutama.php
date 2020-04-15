@@ -42,7 +42,8 @@
        <div class="row">
            <div class="col-md-6">
            <p class="promo-title">KULINER SURABAYA</p>
-               <p>Kuliner Surabaya adalah situs review tempat makan terlengkap di Surabaya. Mulai dari pedagang kaki lima hingga restoran bintang lima. Surabaya Culinary, We do what you fancy</p>
+               <p>Situs review tempat makan terlengkap di Surabaya. Mulai dari pedagang kaki lima hingga restoran bintang lima. </p> 
+               <p>Surabaya Culinary, We do what you fancy!</p>
            </div>
            <div class="col-md-6 text-center">
                <img src="img/undraw_breakfast_psiw.svg" class="img-fluid">
@@ -64,21 +65,21 @@
             <div class="col-md-4">
             <img src="img/about1.jpg" class="about-img">
                 <h4>Sego Sambel Mak Yeye</h4>
-                <p>Jl. Jagir Wonokromo Wetan No.10, Jagir, Surabaya</p>
+                <p>Jl. Jagir Wonokromo Wetan No.10, RT.005/RW.06, Jagir, Kec. Wonokromo, Kota SBY, 60244</p>
             </div>
             
             
             <div class="col-md-4">
             <img src="img/about2.jpg" class="about-img">
                 <h4>Soto Ayam Ambengan Pak Sadi Asli</h4>
-                <p>Jl. Dr. Ir. H. Soekarno</p>
+                <p>Jl. Ambengan No.3A, Ketabang, Kec. Genteng, Kota SBY, Jawa Timur 60272</p>
             </div>
             
             
             <div class="col-md-4">
             <img src="img/about3.jpg" class="about-img">
-                <h4>Tahu Tek Pak Jayen</h4>
-                <p>Jl. Dharmahusada</p>
+                <h4>Tahu Telor Pak Jayen</h4>
+                <p>Jl. Dharmahusada No.112, Mojo, Kec. Gubeng, Kota SBY, Jawa Timur 60115</p>
             </div>
         </div>
         <button type="button"class="btn btn-primary"> </button>
@@ -86,36 +87,46 @@
     
     </section>
 
-<!-------Categories------>
+<!-------Categories----------------------------------->
   <section id="categories" >
-    <div class="container">
-      <h1 class="title text-center"> CATEGORIES </h1>
-        <a class="btn" href="#">
-            <i class="fas fa-star"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fas fa-star-shooting"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fas fa-location-arrow"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fas fa-ice-cream"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fas fa-pizza"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fas fa-soup"></i>
-        </a>
-        </div>
-      </div> 
+    <div class="container text-center">
+      <h1 class="title text-center"> KATEGORI </h1>
+        <div class="categories-icons">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a href="#"><img src="img/categories.png"></a>
+                    <h4>Khas Sby</h4>
+                </div>
+                <div class="col-md-4">
+                     <a href="#"><img src="img/categories2.png"></a>
+                    <h4>Populer</h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/categories3.png"></a>
+                    <h4>Terdekat<h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/categories4.png"></a>
+                    <h4>Dessert</h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/categories5.png"></a>
+                    <h4>Western</h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/categories6.png"></a>
+                    <h4>Chineese</h4>
+                </div>
+            </div>
+      </div>
+            </div>
+    
 </section>
         
 <!----Find us on social media---->
 <section id="social-media">
         <div class="container text-center">
-        <p>FIND US ON SOCIAL MEDIA</p>
+        <p>TEMUKAN KAMI DI MEDIA SOSIAL</p>
             <div class="social-icons">
             <a href="#"><img src="img/facebook.png"></a>
             <a href="#"><img src="img/instagram.png"></a>
@@ -134,10 +145,10 @@
                 </div>
                 
                 <div class="col-md-4 footer-box">
-                    <p><b>CONTACT US</b></p>
-                    <p>Information System, Sepuluh Nopember Institute Technology</p>
+                    <p><b>KONTAK KAMI</b></p>
+                    <p>Kuliner Surabaya</p>
                     <p>+62 81234567890</p>
-                    <p>abcde@gmail.com</p>
+                    <p>abcdefgh@gmail.com</p>
                 </div>
             </div>
         </div>
