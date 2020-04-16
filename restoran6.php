@@ -1,7 +1,7 @@
 <?php
 require'function.php';                                
 
-$produk = query("SELECT * FROM khas WHERE namarestoran = 'Soto Ayam Cak Har'");
+$produk = query("SELECT * FROM khas WHERE namarestoran = 'Tahu Tek Pak Jayen'");
 $review = query("SELECT * FROM review1");
 
 if(isset($_POST["submit"]) ){
