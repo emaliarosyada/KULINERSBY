@@ -65,21 +65,21 @@
         <h1 class="title">TOP THREE</h1>
         <div class="row text-center">
             <div class="col-md-4">
-            <a href="restoran1.php"> <img src="img/about1.jpg" class="about-img">
+            <a href="restoran7.php"> <img src="img/about1.jpg" class="about-img">
                 <h4>Sego Sambel Mak Yeye</h4></a>
                 <p>Jl. Jagir Wonokromo Wetan No.10, RT.005/RW.06, Jagir, Kec. Wonokromo, Kota SBY, 60244</p>
             </div>
             
             
             <div class="col-md-4">
-            <a href="restoran1.php"> <img src="img/about2.jpg" class="about-img">
+            <a href="restoran8.php"> <img src="img/about2.jpg" class="about-img">
                 <h4>Soto Ayam Ambengan Pak Sadi Asli</h4></a>
                 <p>Jl. Ambengan No.3A, Ketabang, Kec. Genteng, Kota SBY, Jawa Timur 60272</p>
             </div>
             
             
             <div class="col-md-4">
-            <a href="restoran1.php"><img src="img/about3.jpg" class="about-img">
+            <a href="restoran6.php"><img src="img/about3.jpg" class="about-img">
                 <h4>Tahu Telor Pak Jayen</h4></a>
                 <p>Jl. Dharmahusada No.112, Mojo, Kec. Gubeng, Kota SBY, Jawa Timur 60115</p>
             </div>

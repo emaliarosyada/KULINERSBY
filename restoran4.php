@@ -1,8 +1,8 @@
 <?php
 require'function.php';                                
 
-$produk = query("SELECT * FROM khas WHERE namarestoran = 'Soto Ayam Cak Har'");
-$review = query("SELECT * FROM review");
+$produk = query("SELECT * FROM khas WHERE namarestoran = 'Rawon Setan Embong Malang'");
+$review = query("SELECT * FROM review4");
 
 if(isset($_POST["submit"]) ){
 
@@ -12,10 +12,10 @@ if(isset($_POST["submit"]) ){
       echo "
       <script>
           alert('Data berhasil ditambahkan!');
-          document.location.href = 'restoran1.php';
+          document.location.href = 'restoran4.php';
       </script>
       ";
-      header('location: restoran1.php');
+      header('location: restoran4.php');
   } else {
       echo "
       <script>
@@ -47,7 +47,7 @@ if(isset($_POST["submit"]) ){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <title> Soto Ayam Lamongan Cak Har </title>
+    <title> Tempat Kuliner </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -93,6 +93,7 @@ if(isset($_POST["submit"]) ){
         </section> 
     <!-- Akhir navbar -->
     <!-- Jumbotron -->
+    <br><br><br>
     
     <div class="row justify-content-center">
         <div class="row">
@@ -114,13 +115,13 @@ if(isset($_POST["submit"]) ){
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/b7/66/fc/chicken-soup-with-indonesian.jpg" alt="Los Angeles" width="1100" height="500">
+                                <img src="img/rawon.jpg" alt="Los Angeles" width="1100" height="500">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://garuda.industry.co.id/uploads/berita/detail/12763.jpg" alt="Chicago" width="1100" height="500">
+                                <img src="img/rawonsetan1.jpg" alt="Chicago" width="1100" height="500">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://arifsetiawan.com/wp-content/uploads/2018/06/Soto-Lamongan-Cak-Har-3.jpg" alt="New York" width="1100" height="500">
+                                <img src="img/rawonsetan2.jpg" alt="New York" width="1100" height="500">
                               </div>
                             </div>
                             
@@ -165,9 +166,9 @@ if(isset($_POST["submit"]) ){
                                     <h1>Makanan</h1>
                                 </div>
                                 <div class="w3-container">
-                                    <h5>Soto Ayam <b>Rp. 20.000</b></h5>
-                                    <h5>Soto Daging <b>Rp. 25.000</b></h5>
-                                    <h5>Jeroan <b>Rp. 5.000</b></h5>
+                                    <h5>Rawon setan spesial<b>Rp. 25.000</b></h5>
+                                    <h5>Rawon setan biasa <b>Rp. 20.000</b></h5>
+                                    <h5>Rawon setan pisah <b>Rp. 20.000</b></h5>
                                 </div>
                                 <div class="w3-container w3-black">
                                     <h1>Minuman</h1>
@@ -182,6 +183,7 @@ if(isset($_POST["submit"]) ){
             </div>                 
         </div>        
     </div>
+    <br><br><br>
 
   
       
@@ -197,7 +199,6 @@ if(isset($_POST["submit"]) ){
             <h4><?= $row["nama"]; ?></h4>
             <hr class="w3-clear">
             <p><?= $row["review"]; ?></p>
-            <h5>Rating: <?= $row["rating"]; ?></h5>
             <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
             <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
           </div>
@@ -231,34 +232,9 @@ if(isset($_POST["submit"]) ){
             <label for="review">Review:</label>
             <textarea class="form-control" rows="5" id="review" name="review" required></textarea>
           </div>
-              <h6>Rating : </h6>
-              <div class="form-check">
-                <label class="form-check-label" for="rating">
-                  <input type="radio" class="form-check-input" id="rating" name="rating" value="option1">1
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="rating2">
-                  <input type="radio" class="form-check-input" id="rating2" name="rating" value="option2">2
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="rating3">
-                  <input type="radio" class="form-check-input" id="rating3" name="rating" value="option3">3
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="rating4">
-                  <input type="radio" class="form-check-input" id="rating4" name="rating" value="option4">4
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="raing5">
-                  <input type="radio" class="form-check-input" id="rating5" name="rating" value="option5" checked>5
-                </label>
-              </div>
+              
               <br>
-              <button type="submit" class="btn btn-success" " name="submit">Tambahkan Review</button>
+              <button type="submit" class="btn btn-success"  name="submit">Tambahkan Review</button>
               <br>
               <br>
             </form>

@@ -84,28 +84,78 @@ if(isset($_post["cari"])){
         </div>
          
     <div class="container">
-      <!--card-->>
-      <div class="row justify-content-center">
-        <div class="col-lg-11 ">
+           <!--card-->>
+           <div class="row justify-content-center">
           <div class="row">
-          <?php foreach ($produk as $row) : ?>
-            <div class="col-lg-4">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="img/<?= $row["linkfoto"]; ?>" alt="Card image cap"  height="190">
+            <div class="col-lg">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/lontongbalap.jpg" alt="Card image cap"  height="190">
                 <div class="card-body">
-                  <h5 class="card-title"><?= $row["namarestoran"]; ?></h5>
-                  <p class="card-text"><?= $row["alamat"]; ?></p>
-                  <a href="restoran1.php" class="btn btn-primary">Selengkapnya</a>
+                  <h5 class="card-title">Lontong Balap Keranggan</h5>
+                  <p class="card-text">Jl. Kranggan No. 60, Bubutan, Surabaya</p>
+                  <a href="restoran2.php" class="btn btn-primary">Selengkapnya</a>
                 </div>
               </div>
-              <br>
             </div>
-            <?php endforeach; ?>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/sateklopo.jpg" alt="Card image cap"  height="190">
+                <div class="card-body">
+                  <h5 class="card-title"> Sate Klopo Ondomohen</h5>
+                  <p class="card-text">jl. Walikota Mustajab No. 36, Genteng, Surabaya</p>
+                  <a href="restoran3.php" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/rawon.jpg" alt="Card image cap" height="190">
+                <div class="card-body">
+                  <h5 class="card-title">Rawon Setan</h5>
+                  <p class="card-text">Jl. Embong Malang No. 78, Genteng, Surabaya</p>
+                  <a href="restoran4.php" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
         
         <br> <br>
+
+        <div class="row justify-content-center">
+          <div class="row">
+            <div class="col-lg">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/bebek.jpg" alt="Card image cap" height="190">
+                <div class="card-body">
+                  <h5 class="card-title">Bebek Palupi</h5>
+                  <p class="card-text">Jl. Rungkut Asri Tengah No. 10, Rungkut, Surabaya</p>
+                  <a href="restoran5.php" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/tahutelur.jpg" alt="Card image cap" height="190">
+                <div class="card-body">
+                  <h5 class="card-title">Tahu Tek Pak Jayen</h5>
+                  <p class="card-text">Jl. Dharmahusada No. 112, Gubeng, Surabaya</p>
+                  <a href="restoran6.php" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/soto.jpg" alt="Card image cap"  height="190" >
+                <div class="card-body">
+                  <h5 class="card-title">Soto Lamongan Cak Har</h5>
+                  <p class="card-text">Jl. Arief Rahman Hakim No. 136, Sukolilo, Surabaya</p>
+                  <a href="restoran1.php" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
          
      
         <!-- Testimonial -->
