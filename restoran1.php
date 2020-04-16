@@ -114,13 +114,13 @@ if(isset($_POST["submit"]) ){
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/b7/66/fc/chicken-soup-with-indonesian.jpg" alt="Los Angeles" width="1100" height="500">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/b7/66/fc/chicken-soup-with-indonesian.jpg" alt="Los Angeles"  height="190">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://garuda.industry.co.id/uploads/berita/detail/12763.jpg" alt="Chicago" width="1100" height="500">
+                                <img src="https://garuda.industry.co.id/uploads/berita/detail/12763.jpg" alt="Chicago"  height="190">
                               </div>
                               <div class="carousel-item">
-                                <img src="https://arifsetiawan.com/wp-content/uploads/2018/06/Soto-Lamongan-Cak-Har-3.jpg" alt="New York" width="1100" height="500">
+                                <img src="https://arifsetiawan.com/wp-content/uploads/2018/06/Soto-Lamongan-Cak-Har-3.jpg" alt="New York"  height="190">
                               </div>
                             </div>
                             
@@ -258,7 +258,7 @@ if(isset($_POST["submit"]) ){
                 </label>
               </div>
               <br>
-              <button type="submit" class="btn btn-success" " name="submit">Tambahkan Review</button>
+              <button type="submit" class="btn btn-success"  name="submit">Tambahkan Review</button>
               <br>
               <br>
             </form>

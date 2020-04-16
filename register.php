@@ -1,6 +1,15 @@
 <?
 require'function.php'; 
 
+if (isset($_post["register"])){
+  if( registrasi ($_POST) > 0) {
+   
+    
+  }else {
+    echo mysqli_error($conn);
+  }
+}
+
 ?>
 
 <!doctype html>
@@ -47,44 +56,37 @@ require'function.php';
         </section> 
     <!-- Akhir navbar -->
 
-    <section id="about">
+        <section id="about">
             <div class="container text-center">
               <h1>KULINER SURABAYA</h1>
             </div>
          </section>
 
-  <!-- Jumbotron -->
+         <!-- Jumbotron -->
 
 
       <div class="row justify-content-center">
           <div class="row">
             <div class="col-lg">
               <div class="card" style="width: 22rem;">
-                
                 <div class="card-body">
                   <div class="container">
-                    <h2>Login</h2>
-                
+                    <h2>Register</h2>
                     <form action="halamanutama.php" method="post">
                       <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
                       </div>
                       <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+                        <label for="password">Create Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
                       </div>
-                      <div class="form-group form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                        </label>
+                      <div class="form-group">
+                        <label for="password2">Confirmation Password:</label>
+                        <input type="password" class="form-control" id="password2" placeholder="Konfirmasi password" name="password2" required>
                       </div>
-                    
-                      <button type="submit" class="btn btn-primary">Login</button>
-                      <br><br>
-                      <div>
-                        <h7 style="color:blue;">Belum punya akun?      </h7>
-                      <a href="register.php" class="btn btn-primary" style="margin-left:38px">Sign up</a></div>
+                      
+                      <button type="submit" name="register" class="btn btn-primary">Register</button>
                     </form>
                   </div>
                 </div>
