@@ -41,10 +41,17 @@
             </nav>
         </section> 
     <!-- Akhir navbar -->
+
+    <section id="about">
+            <div class="container text-center">
+              <h1>KULINER SURABAYA</h1>
+            </div>
+         </section>
+
   <!-- Jumbotron -->
 
 
-<div class="row justify-content-center">
+      <div class="row justify-content-center">
           <div class="row">
             <div class="col-lg">
               <div class="card" style="width: 22rem;">
@@ -88,6 +95,7 @@
                         <label for="pwd">Create Password:</label>
                         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
                       </div>
+                      <br>
                       
                       <button type="submit" class="btn btn-primary">Register</button>
                     </form>
@@ -97,6 +105,7 @@
             </div>
           </div>
 </div>
+<section id="about"></section>
 
   <!-------footer------->
   <section id="footer">
@@ -117,6 +126,7 @@
                     </div>
                 </div>
         </section>  
+        
 
 
 

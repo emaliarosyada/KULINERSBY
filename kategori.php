@@ -1,3 +1,14 @@
+<?php
+require'function.php';
+$produk = query("SELECT * FROM khas");  
+
+//tombol cari diklik
+if(isset($_post["cari"])){
+  $khas =cari ($_post["keyword"]);
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -63,98 +74,54 @@
               <h1 class="title">REKOMENDASI</h1>
             </div>
          </section>
+
+         <div align="right">
+        <form method="post" action="" class="col-md-3" >
+            <input type="text" class="form-control" name="keyword" 
+            placeholder="Masukkan Nama Tempat Kuliner" >
+            <button type="submit" class="btn btn-secondary" name="cari"> Cari </button>
+        </form>
+        </div>
          
     <div class="container">
-        <!--card-->>
-        <div class="row justify-content-center">
+      <!--card-->>
+      <div class="row justify-content-center">
+        <div class="col-lg-11 ">
           <div class="row">
-            <div class="col-lg">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/lontongbalap.jpg" alt="Card image cap"  height="190">
+          <?php foreach ($produk as $row) : ?>
+            <div class="col-lg-4">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="img/<?= $row["linkfoto"]; ?>" alt="Card image cap"  height="190">
                 <div class="card-body">
-                  <h5 class="card-title">Lontong Balap Keranggan</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title"><?= $row["namarestoran"]; ?></h5>
+                  <p class="card-text"><?= $row["alamat"]; ?></p>
+                  <a href="restoran1.php" class="btn btn-primary">Selengkapnya</a>
                 </div>
               </div>
+              <br>
             </div>
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/sateklopo.jpg" alt="Card image cap"  height="190">
-                <div class="card-body">
-                  <h5 class="card-title"> Sate Klopo Ondomohen</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/rawon.jpg" alt="Card image cap" height="190">
-                <div class="card-body">
-                  <h5 class="card-title">Rawon Setan</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
+        </div>
         </div>
         
         <br> <br>
-
-        <div class="row justify-content-center">
-          <div class="row">
-            <div class="col-lg">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/bebek.jpg" alt="Card image cap" height="190">
-                <div class="card-body">
-                  <h5 class="card-title">Bebek Palupi</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/tahutelur.jpg" alt="Card image cap" height="190">
-                <div class="card-body">
-                  <h5 class="card-title">Tahu Tek Pak Jayen</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/soto.jpg" alt="Card image cap"  height="190" >
-                <div class="card-body">
-                  <h5 class="card-title">Soto Lamongan Cak Har</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="restoran1.php" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         
      
         <!-- Testimonial -->
         <section class="testimonial">
           <div class="row justify-content-center">
             <div class="col-lg-8">
-              <h5>"Bekerja dengan suasana hati yang lebih asik dan mempelajari hal baru setiap harinya"</h5>
+            <h5>“Let food be the medicine and medicine be the food.”</h5>
             </div>
           </div>
 
           <div class="row justify-content-center">
             <div class="col-6 justify-content-center d-flex">
-              <figure class="figure">
-                <img src="img/img2.png"  class="figure-img img-fluid rounded-circle" alt="Testi 1">
                 <figcaption class="figure-caption">
-                  <h5>Sunny Ye</h5>
-                  <p>Designer</p>
+                  <p>Hippocrates</p>
                 </figcaption>
-              </figure>
+          
               <br>
               <br>
               <br>
@@ -163,7 +130,7 @@
         </section>
     </div>
 <!-- akhir container -->
-
+<section id="about"></section>
 <!-------footer------->
         <section id="footer">
             <img src="img/wavescopy2.png" class="footer-img">

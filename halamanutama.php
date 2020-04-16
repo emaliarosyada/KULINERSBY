@@ -1,11 +1,11 @@
 <html>
     <head>
         <title>Website</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
               
     </head>
     <body>
@@ -26,9 +26,11 @@
         <a class="nav-link" href="#">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CATEGORIES</a>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+            </li>
         <li class="nav-item">
-        <a class="nav-link" href="#" >CONTACT</a>
+            <a class="nav-link" href="login.php" >LOGIN</a>
       </li>
     </ul>
   </div>
@@ -63,28 +65,27 @@
         <h1 class="title">TOP THREE</h1>
         <div class="row text-center">
             <div class="col-md-4">
-            <img src="img/about1.jpg" class="about-img">
-                <h4>Sego Sambel Mak Yeye</h4>
+            <a href="restoran1.php"> <img src="img/about1.jpg" class="about-img">
+                <h4>Sego Sambel Mak Yeye</h4></a>
                 <p>Jl. Jagir Wonokromo Wetan No.10, RT.005/RW.06, Jagir, Kec. Wonokromo, Kota SBY, 60244</p>
             </div>
             
             
             <div class="col-md-4">
-            <img src="img/about2.jpg" class="about-img">
-                <h4>Soto Ayam Ambengan Pak Sadi Asli</h4>
+            <a href="restoran1.php"> <img src="img/about2.jpg" class="about-img">
+                <h4>Soto Ayam Ambengan Pak Sadi Asli</h4></a>
                 <p>Jl. Ambengan No.3A, Ketabang, Kec. Genteng, Kota SBY, Jawa Timur 60272</p>
             </div>
             
             
             <div class="col-md-4">
-            <img src="img/about3.jpg" class="about-img">
-                <h4>Tahu Telor Pak Jayen</h4>
+            <a href="restoran1.php"><img src="img/about3.jpg" class="about-img">
+                <h4>Tahu Telor Pak Jayen</h4></a>
                 <p>Jl. Dharmahusada No.112, Mojo, Kec. Gubeng, Kota SBY, Jawa Timur 60115</p>
             </div>
         </div>
         <button type="button"class="btn btn-primary"> </button>
-        </div>
-    
+    </div>
     </section>
 
 <!-------Categories----------------------------------->
@@ -94,7 +95,7 @@
         <div class="categories-icons">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <a href="#"><img src="img/categories.png"></a>
+                    <a href="kategori.php"><img src="img/categories.png"></a>
                     <h4>Khas Sby</h4>
                 </div>
                 <div class="col-md-4">

@@ -26,3 +26,13 @@ function tambahreview($data){
       return mysqli_affected_rows($conn);
 }
 
+//cari
+function cari($keyword){
+    $query = "SELECT * FROM khas 
+    WHERE 
+    namarestoran LIKE = '%$keyword%' OR
+    alamat LIKE = '%$keyword%'
+    
+    ";
+    return query($query);
+}
