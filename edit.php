@@ -53,7 +53,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="namarestoran"> Nama Tempat Kuliner :</label>
-                    <input type="text" class="form-control" name="namarestoran" id="namarestoran" required>
+                    <input type="text" class="form-control" name="namarestoran" id="namarestoran" value="<?= $khas["namarestoran"]?>">
                 </div>
             </div>
 
@@ -62,7 +62,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="alamat">Alamat :</label>
-                     <input type="text" class="form-control" name="alamat" id="alamat" required> 
+                     <input type="text" class="form-control" name="alamat" id="alamat" value="<?= $khas["alamat"]?>"> 
                 </div>
             </div>
 
@@ -72,7 +72,7 @@ if(isset($_POST["submit"]) ){
                 <div class="form-group col-md-4">
                     <label for="hari_buka">Hari buka : </label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="hari_buka"id="hari_buka" required>                      
+                        <input type="text" class="form-control" name="hari_buka"id="hari_buka" value="<?= $khas["hari_buka"]?>">                      
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="jam_buka"> Jam Buka :</label>
-                    <input type="text" class="form-control" name="jam_buka" id="jam_buka" required>
+                    <input type="text" class="form-control" name="jam_buka" id="jam_buka" value="<?= $khas["jam_buka"]?>">
                 </div>
             </div>
 
@@ -91,7 +91,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="notelepon"> No telepon:</label>
-                    <input type="text" class="form-control" name="notelepon" id="notelepon" required>
+                    <input type="text" class="form-control" name="notelepon" id="notelepon" value="<?= $khas["notelepon"]?>">
                 </div>
             </div>
 
@@ -100,7 +100,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="harga"> Harga :</label>
-                    <input type="text" class="form-control" name="harga" id="harga" required>
+                    <input type="text" class="form-control" name="harga" id="harga" value="<?= $khas["harga"]?>">
                 </div>
             </div>
 
@@ -109,7 +109,7 @@ if(isset($_POST["submit"]) ){
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
                     <label for="linkfoto"> Link Foto :</label>
-                    <input type="text" class="form-control" name="linkfoto" id="linkfoto" required>
+                    <input type="text" class="form-control" name="linkfoto" id="linkfoto" value="<?= $khas["linkfoto"]?>">
                 </div>
             </div>
 

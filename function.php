@@ -34,13 +34,15 @@ function cari($keyword){
     alamat LIKE = '%$keyword%'
     
     ";
-    return query($query);
+    return query ($query);
 
 }
 
 function registrasi ($data){
     global $conn;
 
+    $username = $data["username"];
+   
     $email = strtolower (stripslashes($data["email"]));
     $password = mysqli_real_escape_string ($conn, $data["password"]);
     $password2 = mysqli_real_escape_string ($conn, $data["password2"]);
@@ -67,7 +69,7 @@ function registrasi ($data){
     $password=password_hash($password, PASSWORD_DEFAULT);
 
     //tambahkan userbaru ke database
-    mysqli_query($conn, "INSERT INTO user VALUES('','$email','$password')");
+    mysqli_query($conn, "INSERT INTO user VALUES('','$username','$email','$password')");
 
     return mysqli_affected_rows($conn);
 

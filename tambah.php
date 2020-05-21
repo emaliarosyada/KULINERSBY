@@ -1,6 +1,7 @@
 <?php
 require'function.php';
 
+
 if(isset($_POST["submit"]) ){
 
 
@@ -16,7 +17,8 @@ if(isset($_POST["submit"]) ){
     } else {
         echo "
         <script>
-            alert('Data gagal ditambahkan!');
+            alert('Data berhasil ditambahkan!');
+            document.location.href = 'index1.php';
         </script>
     ";
     }
@@ -108,7 +110,7 @@ if(isset($_POST["submit"]) ){
             <div class="row" align="center">
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
-                    <button type="submit" class="btn btn-success" style="margin-left:38px" name="submit">Tambahkan Produk</button>
+                    <button type="submit" class="btn btn-success" style="margin-left:38px" name="submit">Tambahkan</button>
                     
                 </div>
             </div>

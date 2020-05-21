@@ -1,12 +1,16 @@
 <?
 require'function.php'; 
 
-if (isset($_post["register"])){
+if (isset($_post["submit"])){
   if( registrasi ($_POST) > 0) {
-   
+    echo "
+        <script>
+            
+        </script>
+        ";
     
   }else {
-    echo mysqli_error($conn);
+   
   }
 }
 

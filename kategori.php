@@ -4,7 +4,7 @@ $produk = query("SELECT * FROM khas");
 
 //tombol cari diklik
 if(isset($_post["cari"])){
-  $khas =cari ($_post["keyword"]);
+  $khas = cari ($_post[" keyword"]);
 }
 
 ?>

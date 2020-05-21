@@ -15,7 +15,7 @@ $produk = query("SELECT * FROM khas");
     <body>
 
         <div class="container">
-        <h1 class="mt-4 mb-4" align="center">Tambah Restoran</h1>
+        <h1 class="mt-4 mb-4" align="center">Daftar Tempat Kuliner</h1>
     
         <br> <br>
         
@@ -40,9 +40,8 @@ $produk = query("SELECT * FROM khas");
                 <td> <?= $row["id"]; ?> </td>
                 <td colspan="3" align="center">
                     <a href="edit.php?id=<?= $row["id"]; ?>" class="btn btn-success">Edit</a>
-                    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="
-                    return confirm('Apakah anda yakin menghapus?');" class="btn btn-danger">Hapus</a>
-                </td>
+                    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick=" return confirm ('Apakah anda yakin menghapus?')" class="btn btn-danger">Hapus</a>
+               
                 <td> <?= $row["namarestoran"]; ?> </td>
                 <td> <?= $row["alamat"]; ?> </td>
                 <td> <?= $row["hari_buka"]; ?> </td>
@@ -64,7 +63,7 @@ $produk = query("SELECT * FROM khas");
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
 
-                    <a href="tambah.php" class="btn btn-primary">Tambah Produk Baru</a>
+                    <a href="tambah.php" class="btn btn-primary">Tambah Tempat Kuliner Baru</a>
                   
                 </div>
             </div>
