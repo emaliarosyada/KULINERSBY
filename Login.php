@@ -67,8 +67,8 @@ require'function.php';
                 
                     <form action="halamanutama.php" method="post">
                       <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <label for="username">Username:</label>
+                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username" required>
                       </div>
                       <div class="form-group">
                         <label for="pwd">Password:</label>

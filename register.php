@@ -74,6 +74,10 @@ if (isset($_post["register"])){
                     <h2>Register</h2>
                     <form action="halamanutama.php" method="post">
                       <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
+                      </div>
+                      <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
                       </div>

@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost", "root", "", "kulinersby");
+$conn = mysqli_connect ("localhost", "root", "", "kulinersby");
 
 
 function query($query) {
@@ -72,3 +72,58 @@ function registrasi ($data){
     return mysqli_affected_rows($conn);
 
 }
+
+function tambah($data1){
+    global $conn;
+    $namarestoran = $data1["namarestoran"];
+    $alamat = $data1["alamat"];
+    $hari_buka = $data1["hari_buka"];
+    $jam_buka = $data1["jam_buka"];
+    $notelepon = $data1["notelepon"];
+    $harga = $data1["harga"];
+    $linkfoto = $data1["linkfoto"];
+
+      $query = "INSERT INTO khas
+                  VALUES ('','$namarestoran','$alamat', '$hari_buka','$jam_buka','$notelepon', '$harga', '$linkfoto')
+               ";
+      mysqli_query($conn, $query);    
+
+      return mysqli_affected_rows($conn);
+}
+
+function hapus($id) {
+  global $conn;
+  mysqli_query($conn, "DELETE FROM khas WHERE id= $id");
+
+  return mysqli_affected_rows($conn);
+
+}
+
+function ubah ($data1){
+   global $conn;
+    $id = $data1["id"];
+  
+    $namarestoran = $data1["namarestoran"];
+    $alamat = $data1["alamat"];
+    $hari_buka = $data1["hari_buka"];
+    $jam_buka = $data1["jam_buka"];
+    $notelepon = $data1["notelepon"];
+    $harga = $data1["harga"];
+    $linkfoto = $data1["linkfoto"];
+
+      $query = "UPDATE khas SET
+                namarestoran = '$namarestoran',
+                alamat = '$alamat', 
+                hari_buka = '$hari_buka',
+                jam_buka = '$jam_buka',
+                notelepon ='$notelepon', 
+                harga = '$harga',
+                linkfoto ='$linkfoto'
+                WHERE id= $id
+               ";
+      mysqli_query($conn, $query);    
+
+      return mysqli_affected_rows($conn);
+}
+
+?>
